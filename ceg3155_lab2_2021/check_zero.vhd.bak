@@ -1,0 +1,25 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY check_zero IS
+	PORT (
+		inp: IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+		o: OUT STD_LOGIC;
+END check_zero;
+
+ARCHITECTURE logicZ OF check_zero IS
+	
+BEGIN
+	
+	o <= not inp(0) and
+			not inp(1) and
+			not inp(2) and
+			not inp(3) and
+			not inp(4) and
+			not inp(5) and
+			not inp(6) and
+			not inp(7) and;
+
+	
+END logicZ;	
+	
